@@ -34,6 +34,15 @@ var i=typeof require=="function"&&require;
 for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){},{}[]},{},[1]);
 
 
+var ph = function() {
+     if (10 >= 9) {
+      return true;
+     }
+     else {
+       return false;
+     }
+};
+
 
 typeof Symbol() === 'symbol'
 typeof Symbol('foo') === 'symbol'
@@ -376,13 +385,3 @@ gulp.task('default', ['serve'])
 gulp.task('clog', () => {
 	console.log( srcPath.yaml );
 })
-
-
-var ph = function() {
-     if (10 >= 9) {
-      return true;
-     }
-     else {
-       return false;
-     }
-};
