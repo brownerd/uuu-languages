@@ -24,13 +24,6 @@
   echo \canine\Dog::says(), "<br />\n";
   echo \animate\Animal::breathes(), "<br />\n";  ?>
 
-
-
-
-
-
-
-
 <?php
 // /database/migrations/seeds/ProjectsTableSeeder.php
 

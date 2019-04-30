@@ -55,14 +55,16 @@ typeof symObj;  // "object"
 
 
 
-
-
 var rad = 1234 * 367;
 var hello = function whatsThis() {
   return 'hello' + 'again';
 };
 
+var house = require('ramda');
+
 let house = require('ramda');
+
+const SECRET_ID = 234983823983899823989889340;
 
 const nada = !!null;
 
