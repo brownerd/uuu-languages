@@ -23,6 +23,25 @@ defmodule HelloPhoenix.Router do
   # scope "/api", HelloPhoenix do
   #   pipe_through :api
   # end
+
+  case {1, 2, 3} do
+    {4, 5, 6} ->
+      "This clause won't match"
+    {1, x, 3} ->
+      "This clause will match and bind x to 2 in this clause"
+    _ ->
+      "This clause would match any value"
+   end
+
+   cond do
+     2 + 2 == 5 ->
+       "This will not be true"
+     2 * 2 == 3 ->
+       "Nor this"
+     1 + 1 == 2 ->
+       "But this will"
+   end
+
 end
 
 
@@ -50,6 +69,8 @@ defmodule HelloPhoenix.Web do
       import Ecto.Query, only: [from: 1, from: 2]
     end
   end
+
+
 
   def controller do
     quote do
